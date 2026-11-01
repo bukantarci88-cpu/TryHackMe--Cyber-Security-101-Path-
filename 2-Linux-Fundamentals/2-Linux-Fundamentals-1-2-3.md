@@ -119,7 +119,9 @@ hello
 
 **S**ecure **S**hell or **SSH** for short and is the common means of connecting to and interacting with the command line of a remote Linux machine. Secure Shell or SSH simply is a protocol between devices in an encrypted form. Using cryptography, any input we send in a human-readable format is encrypted for travelling over a network -- where it is then unencrypted once it reaches the remote machine, such as in the diagram below.
 
-![image.png](Sec%202%20Linux%20Fundamentals%201-2-3/image.png)
+
+<img width="672" height="342" alt="image" src="https://github.com/user-attachments/assets/212c1e91-8f90-4a15-ac53-d1942437c762" />
+
 
 <u>**Using SSH to Login to Your Linux Machine:**</u> The syntax to use SSH is very simple. We only need to provide two things:
 
@@ -358,15 +360,19 @@ file  100%[=================================================>]
 
 You will need to run the wget command in another terminal (while keeping the terminal that is running the Python3 server active). 
 
-![image.png](Sec%202%20Linux%20Fundamentals%201-2-3/image%201.png)
+<img width="797" height="434" alt="image 1" src="https://github.com/user-attachments/assets/7f53b1b3-3f04-4f42-a9c8-ff06624de786" />
+
 
 **Processes 101:** Processes are the programs that are running on your machine. They are managed by the kernel, where each process will have an ID associated with it, also known as its PID. The PID increments for the order In which the process starts. I.e. the 60th process will have a PID of 60. We can use the `ps` command to provide a list of the running processes as our user's session and some additional information such as its status code, the session that is running it, how much usage time of the CPU it is using, and the name of the actual program or command that is being executed:
 
-![image.png](Sec%202%20Linux%20Fundamentals%201-2-3/image%202.png)
+<img width="811" height="270" alt="image 2" src="https://github.com/user-attachments/assets/c8c101f7-21e9-494d-a9bc-f266003019c6" />
+
 
 Note how in the screenshot above, the second process ps has a PID of 204, and then in the command below it, this is then incremented to 205. To see the processes run by other users and those that don't run from a session (i.e. system processes), we need to provide **aux** to the `ps` command like so: `ps aux`
 
-![image.png](Sec%202%20Linux%20Fundamentals%201-2-3/image%203.png)
+
+<img width="975" height="86" alt="image 3" src="https://github.com/user-attachments/assets/e690b8a7-ae18-456a-97d2-020c03ed0ff6" />
+
 
 Note we can see a total of 5 processes -- note how we now have "root"  and "cmnatic" Another very useful command is the top command; top gives you real-time statistics about the processes running on your system instead of a one-time view. These statistics will refresh every 10 seconds, but will also refresh when you use the arrow keys to browse the various rows. Another great command to gain insight into your system is via the top command.
 
@@ -378,7 +384,9 @@ Note we can see a total of 5 processes -- note how we now have "root"  and "cmna
 
 <u>**How do Processes Start:</u>** The process with an ID of 0 is a process that is started when the system boots. This process is the system's init on Ubuntu, such as systemd, which is used to provide a way of managing a user's processes and sits in between the operating system and the user. For example, once a system boots and it initialises, systemd is one of the first processes that are started. Any program or piece of software that we want to start will start as what's known as a child process of systemd. This means that it is controlled by systemd, but will run as its own process (although sharing the resources from systemd) to make it easier for us to identify and the likes.
 
-![image.png](Sec%202%20Linux%20Fundamentals%201-2-3/image%204.png)
+
+<img width="975" height="86" alt="image 3" src="https://github.com/user-attachments/assets/c77b1b83-eec9-48a8-9344-3c1370fb25ab" />
+
 
 <u>**Getting Processes/Services to Start on Boot:</u>** Enter the use of systemctl -- this command allows us to interact with the systemd process/daemon. systemctl is an easy to use command that takes the following formatting: systemctl [option] [service]
 
@@ -392,11 +400,15 @@ Status
 
 **An Introduction to Backgrounding and Foregrounding in Linux:** Processes can run in two states: In the background and in the foreground. For example, commands that you run in your terminal such as "echo" or things of that sort will run in the foreground of your terminal as it is the only command provided that hasn't been told to run in the background. "Echo" is a great example as the output of echo will return to you in the foreground, but wouldn't in the background.
 
-![image.png](Sec%202%20Linux%20Fundamentals%201-2-3/image%205.png)
+
+<img width="1022" height="83" alt="image 4" src="https://github.com/user-attachments/assets/471ef1f1-e808-4d0e-a527-711b92ff5347" />
+
 
 Here we're running `echo "Hi THM"` , where we expect the output to be returned to us like it is at the start. But after adding the `&` operator to the command, we're instead just given the ID of the echo process rather than the actual output -- as it is running in the background. This is great for commands such as copying files because it means that we can run the command in the background and continue on with whatever further commands we wish to execute (without having to wait for the file copy to finish first). We can do the exact same when executing things like scripts -- rather than relying on the & operator, we can use `Ctrl + Z` on our keyboard to background a process. It is also an effective way of "pausing" the execution of a script or command like in the example below:
 
-![image.png](Sec%202%20Linux%20Fundamentals%201-2-3/image%206.png)
+
+<img width="633" height="442" alt="image 6" src="https://github.com/user-attachments/assets/e57328ed-4b5a-4ccf-b6aa-22edfa2e6c04" />
+
 
 <u>**Foregrounding a process:</u>** Now that we have a process running in the background, for example, our script "background.sh" which can be confirmed by using the `ps aux` command, we can back-pedal and bring this process back to the foreground to interact with. With our process backgrounded using either `Ctrl + Z` or the `&` operator, we can use `fg` to bring this back to focus like below, where we can see the `fg` command is being used to bring the background process back into use on the terminal, where the output of the script is now returned to us.
 
@@ -415,11 +427,15 @@ Here we're running `echo "Hi THM"` , where we expect the output to be returned
 | DOW | What day of the week to execute at |
 | CMD | The actual command that will be executed. |
 
-![image.png](Sec%202%20Linux%20Fundamentals%201-2-3/image%207.png)
+
+<img width="698" height="376" alt="image 7" src="https://github.com/user-attachments/assets/cc25adf5-9f4c-45fe-a368-652b4b8881ec" />
+
 
 <u>**Introducing Packages & Software Repos:</u>** When developers wish to submit software to the community, they will submit it to an  "apt" repository. If approved, their programs and tools will be released into the wild. Two of the most redeeming features of Linux shine to light here: User accessibility and the merit of open source tools. When using the `ls` command on a Ubuntu 20.04 Linux machine, these files serve as the gateway/registry.
 
-![image.png](Sec%202%20Linux%20Fundamentals%201-2-3/image%208.png)
+
+<img width="1178" height="477" alt="image 8" src="https://github.com/user-attachments/assets/fef33e47-64b4-4a0e-a3b0-9d45c7c9e28c" />
+
 
 Whilst Operating System vendors will maintain their own repositories, you can also add community repositories to your list! This allows you to extend the capabilities of your OS. Additional repositories can be added by using the `add-apt-repository`command or by listing another provider! For example, some vendors will have a repository that is closer to their geographical location.
 
