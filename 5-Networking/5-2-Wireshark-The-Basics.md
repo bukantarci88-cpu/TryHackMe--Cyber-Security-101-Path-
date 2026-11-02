@@ -188,7 +188,6 @@ What is the TCP payload size? 424
 
 ![Wireshark - Edit Time Display Format](https://cdn-images.tryhackme.com/user-uploads/66c44fd9733427ea1181ad58/room-content/66c44fd9733427ea1181ad58-1761116433016.gif)
 
-![Wireshark - time display format](https://cdn-images.tryhackme.com/user-uploads/6131132af49360005df01ae3/room-content/d2333318ff4df99df252c6ee1c236619.png)
 
 **Expert Info:** Identify protocol errors and anomalies
 
