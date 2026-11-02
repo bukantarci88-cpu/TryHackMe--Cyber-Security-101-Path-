@@ -175,7 +175,8 @@ This will display the HTML code of the rendered page. Inside the source code, an
 > What is the name of the external JS file that is being called by external_test.html? thm_external.js
 > 
 
-![image.png](Sec%208%202%20JavaScript%20Essentials/image.png)
+<img width="513" height="323" alt="image" src="https://github.com/user-attachments/assets/43272b05-addd-4fe1-b97c-fa99319bbc41" />
+
 
 > What attribute links an external JS file in the <script> tag? src
 > 
