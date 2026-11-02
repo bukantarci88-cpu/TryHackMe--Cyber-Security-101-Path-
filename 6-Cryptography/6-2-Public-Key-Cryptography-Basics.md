@@ -39,7 +39,8 @@ Diffie-Hellman Key Exchange is often used alongside RSA public key cryptograph
 > Check the SSH Private Key in ~/Public-Crypto-Basics/Task-5. What algorithm does the key use? RSA
 > 
 
-![Uploading image.png…]()
+<img width="523" height="183" alt="image" src="https://github.com/user-attachments/assets/c71252c0-e0b4-436b-9d36-0ca300e124ce" />
+
 
 
 #### **Task 6 - Digital Signatures and Certificates**
@@ -113,7 +114,8 @@ sub   cv25519 2024-08-29 [E]
 > Use GPG to decrypt the message in ~/Public-Crypto-Basics/Task-7. What secret word does the message hold?  Pineapple
 > 
 
-![image.png](Sec%206%202%20Public%20Key%20Cryptography%20Basics/image%201.png)
+<img width="722" height="396" alt="image 1" src="https://github.com/user-attachments/assets/e874808d-30a1-458d-a439-2c3a26f00f03" />
+
 
 #### **Task 8 - Conclusion**
 
