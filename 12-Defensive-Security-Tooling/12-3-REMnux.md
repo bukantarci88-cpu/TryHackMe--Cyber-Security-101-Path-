@@ -111,12 +111,8 @@ To summarize, when the document `agenttesla.xlsm` is opened, a Macro will run!
 > What file was being downloaded using the PowerShell script? Doc-3737122pdf.exe
 > 
 
-![image.png](SEC%2012%203%20REMnux/image.png)
-
 During our analysis of the PowerShell script, we noted that a file would be downloaded. Where will the file being downloaded be stored? $TempFile 
 Using the tool, scan another file named possible_malicious.docx located in the /home/ubuntu/Desktop/tasks/agenttesla/ directory. How many data streams were presented for this file? 16 (oledump.py examines Microsoft Office files and identify embedded objects, macros, and potentially malicious content.)
-
-![image.png](SEC%2012%203%20REMnux/image%201.png)
 
  
 Using the tool, scan another file named possible_malicious.docx located in the /home/ubuntu/Desktop/tasks/agenttesla/ directory. At what data stream number does the tool indicate a macro present? 8 (In [oledump.py](http://oledump.py/) output, the M flag means the stream contains VBA macro code.VBA is important because attackers frequently use malicious macros in Office documents to execute code, making VBA analysis a key skill in malware investigations)
