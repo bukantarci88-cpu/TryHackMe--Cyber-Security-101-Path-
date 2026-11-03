@@ -385,16 +385,9 @@ You can find more web shells at: [https://www.r57shell.net/index.php(opens in n
 
 
 
-
-
-![image.png](Sec%209%203%20Shell%20Overview/image.png)
-
-![image.png](Sec%209%203%20Shell%20Overview/image%201.png)
-
 > Using a web shell, exploit the unrestricted file upload vulnerability and get a shell. What is the content of the flag saved in the / directory? THM{202bb14ed12120b31300cfbbbdd35998786b44e5}
 > 
 
-![image.png](Sec%209%203%20Shell%20Overview/image%202.png)
 
 #### **Task 9 - Conclusion**
 
