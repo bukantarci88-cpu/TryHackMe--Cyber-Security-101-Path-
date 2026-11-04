@@ -23,8 +23,6 @@ A Uniform Resource Locator (URL) is a web address that lets you access all kinds
 
 **Anatomy of a URL**
 
-![Illustration depicting the various parts of a URL, including the protocol, domain name, path, query parameters, and fragment. Each component is labeled and visually distinct, demonstrating how they work together to form a complete web address.](https://tryhackme-images.s3.amazonaws.com/user-uploads/5c549500924ec576f953d9fc/room-content/34ad66d8b90aaaa35f9536d3b152ea97.png)
-
 - **Scheme:** Defines the communication protocol (HTTP/HTTPS) used to access a website.
 - **User:** Contains optional user credentials in a URL, but exposing them creates security risks.
 - **Host/Domain:** Identifies the website location and must be checked for phishing and typosquatting.
