@@ -204,7 +204,6 @@ What is the TCP payload size? 424
 
 You can use the **"lower left bottom section"** in the status bar or **"Analyse --> Expert Information"** menu to view all available information entries via a dialogue box. It will show the packet number, summary, group protocol and total occurrence.
 
-![Wireshark - expert info](https://cdn-images.tryhackme.com/user-uploads/6131132af49360005df01ae3/room-content/31917b6f1e846d3383218cabf1c07caf.png)
 
 **Answer the questions below**
 
