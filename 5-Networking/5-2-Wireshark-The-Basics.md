@@ -117,7 +117,6 @@ We can see seven distinct layers to the packet: `frame/packet`,`source [MAC]`,`
 
 **Application Data:** This extension of the 5th layer can show the application-specific data.
 
-![Wireshark - application data](https://cdn-images.tryhackme.com/user-uploads/66c44fd9733427ea1181ad58/room-content/66c44fd9733427ea1181ad58-1761042014019.png)
 
 **Answer the questions below**
 
