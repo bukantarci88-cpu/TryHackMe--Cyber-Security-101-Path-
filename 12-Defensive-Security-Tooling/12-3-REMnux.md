@@ -1,7 +1,5 @@
 # SEC 12.3. REMnux
 
-#### **REMnux**
-
 #### **Task 1 - Introduction**
 
 Analysing potentially malicious software can be daunting, especially when this is part of an ongoing security incident. This analysis puts much pressure on the analyst. Most of the time, the results must be as accurate as possible, and analysts use different tools, machines, and environments to achieve this. In this room, we will use the REMnux VM.
@@ -111,8 +109,13 @@ To summarize, when the document `agenttesla.xlsm` is opened, a Macro will run!
 > What file was being downloaded using the PowerShell script? Doc-3737122pdf.exe
 > 
 
+<img width="602" height="567" alt="image" src="https://github.com/user-attachments/assets/940960ad-b39c-465d-87f0-9e259a47b024" />
+
+
 During our analysis of the PowerShell script, we noted that a file would be downloaded. Where will the file being downloaded be stored? $TempFile 
 Using the tool, scan another file named possible_malicious.docx located in the /home/ubuntu/Desktop/tasks/agenttesla/ directory. How many data streams were presented for this file? 16 (oledump.py examines Microsoft Office files and identify embedded objects, macros, and potentially malicious content.)
+
+<img width="651" height="292" alt="image 1" src="https://github.com/user-attachments/assets/a2d72830-46d3-4f63-b642-0ff100a77c42" />
 
  
 Using the tool, scan another file named possible_malicious.docx located in the /home/ubuntu/Desktop/tasks/agenttesla/ directory. At what data stream number does the tool indicate a macro present? 8 (In [oledump.py](http://oledump.py/) output, the M flag means the stream contains VBA macro code.VBA is important because attackers frequently use malicious macros in Office documents to execute code, making VBA analysis a key skill in malware investigations)
