@@ -1,7 +1,5 @@
 # SEC 12.4. FlareVM
 
-#### **FlareVM**
-
 #### **Task 1 - Introduction**
 
 **FlareVM**, or "**Forensics, Logic Analysis, and Reverse Engineering**," stands out as a comprehensive and carefully curated collection of specialized tools uniquely designed to meet the specific needs of reverse engineers, malware analysts, incident responders, forensic investigators, and penetration testers.  
@@ -116,6 +114,9 @@ These tools are the basic ones used for initial investigations.
 
 **FLOSS:** LOSS (FireEye Labs Obfuscated String Solver) is a static analysis tool that extracts and de-obfuscates **hidden strings** from malware binaries. It can reveal useful indicators such as **URLs, IP addresses, file paths, API calls, registry keys, and configuration data**. These tools help security analysts investigate malware by analyzing **file structure, network behavior, executable properties, and hidden indicators** without executing malicious files.
 
+<img width="553" height="152" alt="image" src="https://github.com/user-attachments/assets/c8156f76-b2fb-48ca-9991-407071f67f1a" />
+
+
 **Answer the questions below**
 
 > Which tool was formerly known as FireEye Labs Obfuscated String Solver? FLOSS
@@ -127,6 +128,9 @@ These tools are the basic ones used for initial investigations.
 > By using the Process Explorer (procexp) tool, under what process can we find smss.exe? System
 > 
 
+<img width="831" height="238" alt="image 1" src="https://github.com/user-attachments/assets/6a6cfb70-abd5-41d5-9a13-09df790181a8" />
+
+
 > Which powerful Windows tool is designed to help you record issues with your system's apps? Procmon
 > 
 
@@ -135,6 +139,9 @@ These tools are the basic ones used for initial investigations.
 
 > Using the tool PEStudio to open the file cryptominer.bin in the Desktop\Sample folder, what is the sha256 value of the file?  E9627EBAAC562067759681DCEBA8DDE8D83B1D813AF8181948C549E342F67C0E
 > 
+
+<img width="881" height="462" alt="image 2" src="https://github.com/user-attachments/assets/a1b50a19-ac20-45f0-8517-b23b1fe73115" />
+
 
 > Using the tool PEStudio to open the file cryptominer.bin in the Desktop\Sample folder, how many functions does it have? 102
 > 
@@ -145,8 +152,13 @@ These tools are the basic ones used for initial investigations.
 > Using the tool CFF Explorer to open the file possible_medusa.txt in the Desktop\Sample folder, what is the MD5 of the file? 646698572AFBBF24F50EC5681FEB2DB7
 > 
 
+<img width="696" height="402" alt="image 3" src="https://github.com/user-attachments/assets/d8d7f7d8-abcb-42a0-a2d8-1be93e0cc352" />
+
+
 > Use the CFF Explorer tool to open the file possible_medusa.txt in the Desktop\Sample folder. Then, go to the DOS Header Section. What is the e_magic value of the file? 5A4D
 > 
+
+<img width="521" height="348" alt="image 4" src="https://github.com/user-attachments/assets/c88e4757-ed2e-4a66-82d3-5844558435fa" />
 
 #### **Task 4 - Analyzing Malicious Files!**
 
@@ -234,8 +246,14 @@ This confirms that the binary was indeed making a connection to an unknown IP ad
 > Using PEStudio, open the file windows.exe. What is the entropy value of the file windows.exe? 7.999
 > 
 
+<img width="872" height="397" alt="image 5" src="https://github.com/user-attachments/assets/21e1031c-0c1a-40ab-8f19-1c34efc10c56" />
+
+
 > Using PEStudio, open the file windows.exe, then go to manifest (administrator section). What is the value under requestedExecutionLevel? requireAdministrator
 > 
+
+<img width="877" height="405" alt="image 6" src="https://github.com/user-attachments/assets/0332ddf3-6c6d-4a7c-a9e8-184093a33263" />
+
 
 > Which function allows the process to use the operating system's shell to execute other processes? set_UseShellExecute
 > 
@@ -246,14 +264,26 @@ This confirms that the binary was indeed making a connection to an unknown IP ad
 > What is the Imphash of cobaltstrike.exe? 92EEF189FB188C541CBD83AC8BA4ACF5
 > 
 
+<img width="820" height="303" alt="image 7" src="https://github.com/user-attachments/assets/9b7ee86d-24ef-41b5-bd5c-f666228a8afa" />
+
+
 > What is the defanged IP address to which the process cobaltstrike.exe is connecting? 47[.]120[.]46[.]210
 > 
+
+<img width="630" height="580" alt="image 8" src="https://github.com/user-attachments/assets/174a56e8-566f-4286-b823-690166a6ab47" />
+
 
 > What is the destination port number used by cobaltstrike.exe when connecting to its C2 IP Address? 81
 > 
 
+<img width="747" height="612" alt="image 9" src="https://github.com/user-attachments/assets/7372905d-b026-4314-beea-583f91638149" />
+
+
 > During our analysis, we found a process called cobaltstrike.exe. What is the parent process of cobaltstrike.exe? explorer.exe
 > 
+
+<img width="756" height="667" alt="image 10" src="https://github.com/user-attachments/assets/07ea37fe-280b-4512-84a9-7855ad83eb11" />
+
 
 #### **Task 5 - Conclusion**
 
