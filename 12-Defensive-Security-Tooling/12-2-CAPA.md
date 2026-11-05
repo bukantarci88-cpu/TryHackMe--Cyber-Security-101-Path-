@@ -1,7 +1,5 @@
 # Sec. 12.2. CAPA
 
-#### **CAPA**
-
 #### **Task 1 - Introduction**
 
 One of the challenges when analyzing potentially malicious software is that we risk our machine or environment being compromised when we run it unless we have a sandbox or a completely isolated environment where we can test all we want. Generally speaking, there are two types of analysis: dynamic analysis and static analysis. This room will focus on conducting static analysis using a tool called CAPA.
@@ -59,6 +57,8 @@ Loading the content to PowerShell will give the same output from the terminal 
 
 > What PowerShell command will you use to read the content of a file? Get-Content
 > 
+
+<img width="725" height="537" alt="image" src="https://github.com/user-attachments/assets/87ea0824-9ed9-47f8-91dd-9e4f8c49fb52" />
 
 
 #### **Task 3 - Dissecting CAPA Results Part 1: General Information, MITRE and MAEC**
@@ -152,6 +152,9 @@ Additionally, when CAPA tags a file with a “**Downloader**” MAEC (malware at
 
 > When CAPA tags a file with this MAEC value, it indicates that the file demonstrates behaviour similar to, but not limited to, Fetching additional payloads or resources from the internet? Downloader
 > 
+
+<img width="652" height="571" alt="image 1" src="https://github.com/user-attachments/assets/1f0c14d9-7393-446b-abc8-35404e3517b0" />
+
 
 #### **Task 4 - Dissecting CAPA Results Part 2: Malware Behavior Catalogue**
 
