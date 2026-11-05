@@ -185,13 +185,19 @@ Now, let’s test our rule by browsing to `http://10.10.10.10/`. We get an erro
 > What is the name of the rule that was created to block all incoming traffic on the SSH port? Core Op
 > 
 
+<img width="648" height="376" alt="image" src="https://github.com/user-attachments/assets/5cd60108-affa-44cb-90a3-1b55f0d40616" />
+
 
 > A rule was created to allow SSH from one single IP address. What is the rule name? Infra team
 > 
 
+<img width="778" height="372" alt="image 1" src="https://github.com/user-attachments/assets/4cff8669-5226-4d33-ba68-e051fa1fa300" />
+
 
 > Which IP address is allowed under this rule? 192.168.13.7
 > 
+
+<img width="790" height="531" alt="image 2" src="https://github.com/user-attachments/assets/5d30106a-90ec-4b6c-8253-504d7ca87b01" />
 
 
 #### **Task 5 - Linux iptables Firewall**
