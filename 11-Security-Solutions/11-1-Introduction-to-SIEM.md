@@ -157,10 +157,16 @@ SIEM solution has detection rules that catch threats. These rules play an impor
 #### **6 - Lab Work**
 
 > After clicking on the Start Suspicious Activity button, which process caused the alert? cudominer.exe
->
+> 
+
+<img width="447" height="387" alt="image" src="https://github.com/user-attachments/assets/e3efa39d-5e1e-47c3-8e10-da372968d2df" />
+
 
 > Find the event that caused the alert and identify the user responsible for the process execution. chris
 > 
+
+<img width="443" height="48" alt="image 1" src="https://github.com/user-attachments/assets/275685f0-aeba-45d3-9524-d271fbf16e03" />
+
 
 > What is the hostname of the suspect user? HR_02
 > 
@@ -168,11 +174,15 @@ SIEM solution has detection rules that catch threats. These rules play an impor
 > Examine the rule and the suspicious process; which term matched the rule that caused the alert? miner
 > 
 
+<img width="561" height="188" alt="image 2" src="https://github.com/user-attachments/assets/16f26f4b-9512-49a7-9fe4-2ba55130ca52" />
+
 
 > Which option best represents the event? Choose from the following:
 > 
 - False Positive  +
 - True Positive
+
+<img width="467" height="227" alt="image 3" src="https://github.com/user-attachments/assets/33c0514e-dbf0-4af8-bd6f-c9a5f129fa4c" />
 
 
 > Selecting the right ACTION will display the FLAG. What is the FLAG? THM{000_SIEM_INTRO}
