@@ -159,10 +159,16 @@ ubuntu@tryhackme:~$ sudo snort -q -l /var/log/snort -r Task.pcap -A alert_fast -
 > What is the IP address of the machine that tried to connect to the subject machine using SSH? 10.11.90.211
 > 
 
+<img width="667" height="134" alt="image" src="https://github.com/user-attachments/assets/5a33065a-d6cc-453e-93cf-5198ea6defa5" />
+
+
 ubuntu@tryhackme:~$ sudo snort -q -l /var/log/snort -r Intro_to_IDS.pcap -A console -c /etc/snort/snort.conf
 
 > What other rule message besides the SSH message is detected in the PCAP file? Ping Detected
 > 
+
+<img width="421" height="117" alt="image 1" src="https://github.com/user-attachments/assets/4b256ee0-d71c-421d-9403-b1d28bd8a173" />
+
 
 > What is the sid of the rule that detects SSH? 1000002
 >
